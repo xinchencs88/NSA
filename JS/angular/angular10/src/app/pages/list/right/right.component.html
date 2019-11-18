@@ -1,0 +1,157 @@
+<header>
+    <div class="main_wap_box">
+      <div class="fs18">猎头</div>
+      <div class="long_solid"></div>
+      <div class="fs18">user</div>
+      <div class="long_solid"></div>
+      <div  class="icon" nz-icon nzType="minus-circle" nzTheme="outline" (click)='quit()'></div>
+    </div>
+  </header>
+ 
+ 
+  <main>
+    <!-- 搜素类容 -->
+    <div class="main_wear_box">
+      <div class="main_right">
+        <samp class="samp_R">修改时间</samp>
+        <nz-date-picker 
+        [nzFormat]="dateFormat" 
+        nzPlaceHolder
+        [(ngModel)]="time"
+        >
+      </nz-date-picker>
+        <samp class="samp_solid"></samp>
+        <nz-date-picker 
+        [nzFormat]="dateFormat" 
+        nzPlaceHolder
+        [(ngModel)]="times"
+        >
+      </nz-date-picker>
+ 
+ 
+        <samp class="samp_R">类&nbsp;&nbsp;型</samp>
+        <nz-select 
+        style="width: 120px;" 
+        nzAllowClear 
+        nzPlaceHolder="全部"
+        [(ngModel)]="typeNz"
+        [nzServerSearch]='true'
+        >
+        <nz-option 
+         *ngFor="let type of types | keyvalue"
+         [nzValue]="type.key" 
+         [nzLabel]="type.value"
+        ></nz-option>
+          
+           </nz-select>
+           
+      </div>
+     <div  class="main_right">
+         <samp class="samp_R1">状&nbsp;&nbsp;态</samp>
+         <nz-select 
+         style="width: 120px;" 
+         nzAllowClear 
+         nzPlaceHolder="全部"
+         
+         [(ngModel)]='sss'
+        
+        
+         >    
+                 <nz-option 
+                 *ngFor="let type of status | keyvalue " 
+                 [nzValue]="type.key" 
+                 [nzLabel]="type.value"
+                 ></nz-option>
+                
+                 
+               </nz-select>
+ 
+     </div>
+     <!-- 按钮 -->
+  <div class="button_search">
+     <button nz-button class="button_color" (click)="empty()">清空</button>
+     <button nz-button nzType="primary" (click)="seekType()">搜索</button>
+   
+  </div>
+    </div>
+    <!-- 表单 -->
+    <div>
+      <div class="msg_list">
+      <samp>Article列表</samp>
+      <!-- 增加按钮 -->
+      <button nz-button nzType="primary"  [routerLink]="['/list/compile']">
+         <!-- <div class="button_fs10" nz-icon nzType="plus" nzTheme="outline"></div>  -->
+       增加
+     </button>
+  
+    
+      
+      </div>
+      <!-- 表单 -->
+      <nz-table 
+      #basicTable 
+      [nzData]="listOfData" 
+      [nzScroll]="{y: '290px'}" 
+      [nzFrontPagination]= "false"
+      [nzTotal]="total"
+      [nzPageSize]="size"
+      [(nzPageIndex)]="page"
+      [nzLoading]="loading"
+      (nzPageIndexChange)="pageIndexChange()"
+      >
+         <thead>
+           <tr>
+             <th class="id">ID</th>
+             <th class="title">名称</th>
+             <th class="type">类型</th>
+             <th  class="createAt">发布时间</th>
+             <th  class="createAt">修改时间</th>
+             <th class="author">发布作者</th>
+             <th class="status">状态</th>
+             <th class="center">操作</th>
+           </tr>
+         </thead>
+         <tbody>
+           <tr 
+           *ngFor="let data of basicTable.data"
+           >
+             <td class="id">{{ data.id }}</td>
+             <td class="title">{{ data.title }}</td>
+             <td class="type">{{data.type | type}}</td>
+             <td class="createAt">{{ data.createAt | date:"yyyy-MM-dd"}}</td>
+             <td class="createAt">{{ data.updateAt | date:"yyyy-MM-dd"}}</td>
+             <td class="author">{{ data.author}}</td>
+             <td class="status">{{ data.status | status }}</td>
+             <td 
+             
+             nz-popconfirm
+             [nzTitle]="data.status===2 ? '是否下线' : '是否上线'"
+             (nzOnConfirm)="putData(data)"
+             >
+               <a >{{ data.status | state }}</a>
+              
+             </td>
+             <td>
+            
+              <a
+              nz-popconfirm 
+              [nzCondition]='true'
+              (nzOnConfirm)="compile(data)" >编辑 </a>
+              
+             </td>
+             <td>
+              
+              <a
+              nz-popconfirm 
+              [nzCondition]='true'
+              (nzOnConfirm)='delete(data)'
+              
+              >删除</a>
+             </td>
+           </tr>
+         </tbody>
+       </nz-table>
+       
+    </div>
+  </main>
+ 

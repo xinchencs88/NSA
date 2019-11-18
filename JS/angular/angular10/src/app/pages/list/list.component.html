@@ -1,0 +1,31 @@
+<html>
+<div class="wep_color">
+    <a class="fs_color" [routerLink]="[ 'welcome' ]">萝卜多系统后台</a>
+        <ul nz-menu nzMode="inline" nzTheme="dark" [nzInlineCollapsed]="isCollapsed">
+               
+                <li nz-submenu nzTitle="信息管理" nzIcon="setting">
+                  <ul>
+                    <a nz-menu-item >信息管理</a>
+                    
+                  </ul>
+                </li>
+                <li nz-submenu nzTitle="Article管理" nzIcon="setting">
+                  <ul>
+                    <li nz-menu-item  [routerLink]="['right']">Article管理</li>
+                  </ul>
+                </li>
+                <li nz-submenu nzTitle="人才管理" nzIcon="setting">
+                        <ul>
+                          <li nz-menu-item>人才管理</li>
+                        </ul>
+                      </li>
+              </ul>           
+</div>
+
+
+<main>
+    <router-outlet></router-outlet>
+</main>
+
+</html>
+

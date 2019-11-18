@@ -1,0 +1,103 @@
+/* 文字大小 */
+ .fs-11{
+     font-size: 11px;
+ } 
+.fs-12{
+      font-size: 12px
+  }
+  .fs-13{
+      font-size:13px;
+  }
+  .fs-14{
+      font-size:14px;
+  }
+.fs-15{
+    font-size: 15px;
+}
+.fs-18{
+    font-size: 18px;
+}
+/* mg距离 */
+.mgt-10{
+    margin-top: 10px;
+}
+.mgb-10{
+    margin-bottom:10px;
+}
+.mgl-10{
+    margin-left: 10px;
+}
+.mgr-5{
+    margin-right: 5px;
+}
+.mgr-10{
+    margin-right: 10px;
+}
+.mgr-15{
+    margin-right: 15px;
+}
+.mgtb-10{
+    margin: 10px 0;
+     
+}
+/* 上下 */
+.mgtb-15{
+    margin: 15px 0;
+}
+/* 左右 */
+.mglr-10{
+    margin: 0 10px;
+}
+.mglr-15{
+    margin: 0 15px;
+}
+/* padding 线 */
+.pt-5{
+    padding-top: 5px;
+}
+.pb-5{
+    padding-bottom: 5px;
+
+}
+.pl-10{
+    padding-left: 10px;
+}
+.pl-15{
+    padding-left: 15px;
+}
+.pr-10{
+    padding-right: 10px;
+}
+.ptb-10{
+    padding:10px 0 ;
+}
+.ptb-15{
+    padding:15px 0 ;
+}
+.plr-10{
+    padding: 0 10px;
+}
+.plr-15{
+   padding: 0 15px;
+}
+/* ------------padding vw------- */
+.pdlr-15vw{
+    padding: 0 15vw;
+}
+/* --------border盒子------------ */
+ .bd-s-1{
+     border: 1px solid;
+ }
+ .bd-b-1{
+    border-bottom:  1px solid;
+ }
+ /* ---------------文字 左中右   ------ */
+ .text-l{
+     text-align: left;
+ }
+ .text-c{
+     text-align:center;
+ }
+ .text-r{
+     text-align: right;
+ }

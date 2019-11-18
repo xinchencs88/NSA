@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="JS5-1CSSJS/JS5-1.css">
+</head>
+<body>
+    <video  src="picture/Sequence 01_4.mp4" class="videoWH" autoplay loop muted >
+        <source src="picture/Sequence 01_4.mp4"  >
+    </video>
+    <div class="centre">
+        <h2>登录平台</h2>
+        <form>
+            <div class="warp">
+                <input class="inputText" type="text"name="" onKeyUp="value=value.replace(/[\W]/g,'')" maxlength="18" required>
+                <label for="">账号</label>
+            </div>
+            <div class="warp">
+                <input class="password" type="password" name="" onKeyUp="value=value.replace(/[\W]/g,'')"  maxlength="6" required>
+                <label for="">密码</label>
+            </div>
+            <input class="landing" type="button" value="登录">
+        </form>
+        
+    </div>
+    <script src="/JS5-1CSSJS/JS5.js"></script>
+</body>
+</html>

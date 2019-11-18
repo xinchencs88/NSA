@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background-color: #29bde0;
+
+    .arrows1 {
+        width: 15px;
+        height: 15px;
+        border-top: 1.5px solid #ffffff;
+        border-left: 1.5px solid #ffffff;
+        transform: rotate(-45deg);
+
+    }
+
+    .fs-center {
+        font-size: 14px;
+        color: #ffffff;
+    }
+
+    .end {
+        width: 18px;
+
+
+
+    }
+}
+
+main {
+    padding: 0 4px;
+}
+
+.main-wrap {
+    margin: 15px 0;
+    border: 1px solid #c9c9c9;
+    background-color: #ffffff;
+    .top-fs {
+        height: 45px;
+        line-height: 45px;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+        border-bottom: 1px solid #c9c9c9;
+        color: #29bde0;
+    }
+
+ 
+
+        .wrap {
+            //游戏主体内容规则
+           margin: 0 0 0 18px ;
+            border-left: 1px solid #c9c9c9;
+           
+           
+            .one-wrap-killer {
+                //杀手盒子
+                position: relative;
+                display: flex;
+                height: 37.5px;
+                padding: 10px 29px 10px 20px;
+                
+                .img1{
+                    position: absolute;
+                    left: -16px;
+                  
+                    height: 24px;
+                    width: 30px;
+                    padding-top:6px;
+                    text-align: center;
+                    border: 1px solid #c9c9c9;
+                    border-radius: 50%;
+                    background-color: #ffffff;
+                    .img-s1{
+                        width: 18px;
+                    }
+                }
+                .img{
+                    position: absolute;
+                    left: -16px;
+                   
+                    height: 25px;
+                    width: 30px;
+                    padding-top:5px;
+                    text-align: center;
+                    border: 1px solid #c9c9c9;
+                    border-radius: 50%;
+                    background-color: #ffffff;
+                   
+                  .img-s{
+                      width: 16px;
+                      
+                  }
+                
+
+                }
+                .arrows{//画三角
+                    width: 0;
+                    height: 0;
+                    margin: 8px 0 0 0;
+                    border: 10.5px solid;
+                    border-color:  transparent #24a7c6 transparent transparent;
+                }
+                .box-color{
+                    height: 40px;
+                    width: 100%;
+                    font-size: 14px;
+                    text-align: center;
+                    line-height: 40px;
+                    background-color: #24a7c6;
+                    color: #ffffff;
+                }
+
+
+            }
+            .font-s15{
+                  margin: 5px 29px 10px 40px;
+                  text-align: center;
+                  background-color: #2c3e50;
+                  color: #8e44ad;
+            }
+        }
+    }
+
+
+    // ---底部2个按钮
+    footer{
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        height: 60px;
+        width: 100%;
+        background-color:#29bde0;
+        .right-button{
+            height: 40px;
+            width: 40%;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 40px;
+            background-color: red;
+            color: #ffffff;
+            
+        }
+        .left-buttom{
+            height: 40px;
+            width: 40%;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 40px;
+            background-color: orange;
+            color: #ffffff;
+            
+        }
+    }

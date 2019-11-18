@@ -1,0 +1,342 @@
+body {
+    margin: 0;
+}
+
+header {
+    @import url(heard.css);
+}
+
+footer {
+    @import url(footer.css);
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+main {
+    padding: 0 15vw;
+    background-color: #fafafa;
+
+    // -----导航栏职业介绍---------
+    .nav-wrap-box {
+        border-bottom: 1px solid #d0d6d9;
+        padding: 31px 0;
+
+        .fs {
+
+            color: black;
+            font-weight: bold;
+
+        }
+
+        .fs1-box {
+            color: #29b078;
+        }
+    }
+
+    .nav-wrap-colum {
+        padding: 23px 0;
+        border-bottom: 1px solid #edf1f2;
+
+        .fs13-color {
+            font-size: 13px;
+            color: gray;
+        }
+
+        .a-ib {
+            color: black;
+
+            &:hover {
+                background-color: #29b078;
+                color: white;
+            }
+        }
+
+    }
+
+    // -----导航栏职业介绍---------
+
+
+    .fs-height80 {
+        padding: 32px 0;
+        margin: 0;
+        border-bottom: 1px solid #d0d6d9;
+
+    }
+
+    //前端职业介绍内容
+    .profession-warp-box {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+
+        .box-warp {
+            position: relative;
+            width: 32.1%;
+            margin: 43px 1% 0 0;
+            border: 1px solid #eeeded;
+            background-color: #ffffff;
+
+            &:hover .ios-warp {
+                visibility: visible;
+                animation: ro 2s ease-out 1;
+
+                @keyframes ro {
+                    0% {
+                        transform: rotateY(0)
+                    }
+
+                    100% {
+                        transform: rotateY(360deg);
+                    }
+
+                }
+            }
+
+            .img-fs-flex {
+                display: flex;
+
+                .img-wh {
+                    display: inline-block;
+                    margin: 10px;
+                    width: 35%;
+                    height: 35%;
+
+                }
+
+                .fs-warp-box {
+                    display: inline-block;
+
+                    .fs-mg {
+
+                        font-weight: bold;
+                        margin: 10px 0;
+                    }
+                }
+            }
+
+            .msg-warp-box {
+                display: flex;
+                border-top: 1px solid #edf1f2;
+                border-bottom: 1px solid #edf1f2;
+
+                img {
+                    vertical-align: middle;
+                }
+
+                .fs-l-container {
+                    width: 50%;
+                    padding: 10px 5px 10px 5px;
+                    border-right: 1px solid #edf1f2;
+                    color: gray;
+
+                }
+
+                .fs-r-container {
+                    width: 50%;
+                    padding: 10px 5px 10px 5px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    color: gray;
+
+                }
+            }
+
+            .msg2-warp-box {
+                display: flex;
+
+                .fs-l2-container {
+                    width: 50%;
+                    padding: 10px 5px 10px 5px;
+                    border-right: 1px solid #edf1f2;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    color: gray;
+
+
+
+                }
+
+                .fs-red {
+                    color: red;
+                }
+
+                .fs-r2-container {
+                    width: 50%;
+                    padding: 10px 5px 10px 5px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    color: gray;
+
+                }
+            }
+
+            .msg3-warp-box {
+                display: flex;
+                border-top: 1px solid #edf1f2;
+                border-bottom: 1px solid #edf1f2;
+
+                .fs-l3-container {
+                    width: 40%;
+                    height: 105px;
+                    border-right: 1px solid #edf1f2;
+                    text-align: center;
+                    line-height: 105px;
+                    color: gray;
+
+
+
+                }
+
+                .samp-s {
+                    position: absolute;
+                    right: 10px;
+                }
+
+                .fs-r3-container {
+                    width: 60%;
+                    position: relative;
+
+                    .fs-s1 {
+                        padding: 10px 5px 10px 26px;
+                        border-bottom: 1px solid #edf1f2;
+                    }
+
+                    .fs-s2 {
+                        padding: 10px 5px 10px 26px;
+                    }
+
+                }
+
+
+            }
+
+            .fs-bottom1 {
+                font-weight: bold;
+                padding: 10px 5px 10px 5px;
+                border-bottom: 1px solid #edf1f2;
+
+            }
+
+            .span-red {
+                color: red;
+            }
+
+            .fs-bottom2 {
+                padding: 10px 5px 10px 5px;
+                color: grey;
+
+            }
+
+            .ios-warp {
+                position: absolute;
+                top: 0;
+                height: 100%;
+                padding: 0 10% 0 10%;
+
+                background-color: black;
+                opacity: 0.8;
+                color: #fff;
+                visibility: hidden;
+
+                .ios1 {
+                    font-size: 25px;
+                    text-align: center;
+                    padding: 10% 0 10% 0;
+                }
+
+                .ios2 {
+                    line-height: 20px;
+                    font-size: 16px;
+                    text-align: left;
+
+                }
+            }
+
+        }
+    }
+
+    .ptb {
+        padding-top: 234px;
+    }
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 130px) {
+    main {
+        .profession-warp-box {
+            .box-warp {
+                width: 32%;
+            }
+        }
+
+        
+    }
+
+}
+
+@media only screen and (max-width: 1300px) and (min-width: 1000px) {
+    main {
+        .profession-warp-box {
+            .box-warp {
+                width: 48.5%;
+                .ios-warp{
+                    .ios2{
+                        line-height: 25px;
+                    }
+                }
+            }
+        }
+       
+    }
+}
+
+@media only screen and (max-width: 1000px) and (min-width:800px){
+    main {
+        .profession-warp-box {
+            justify-content: center;
+            .box-warp {
+                width: 80%;
+                margin: 43px 0 0 0;
+              .ios-warp{
+                  .ios2{
+                 line-height: 27px;
+                  }
+              }
+            }
+        }
+
+      
+    }
+
+
+}
+@media only screen and (max-width: 800px) {
+    main {
+        .profession-warp-box {
+            justify-content: center;
+            .box-warp {
+                width: 100%;
+                margin: 43px 0 0 0;
+              .ios-warp{
+                  .ios2{
+                 line-height: 27px;
+                  }
+              }
+            }
+        }
+
+      
+    }
+
+
+}
+
+.footer-nav-wrap {
+    margin: 0;
+}

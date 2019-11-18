@@ -1,0 +1,122 @@
+.main_wap_box{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+   
+    height: 33.5px;
+    width: 100%;
+   
+    border-bottom: 1px solid #7f8c8d;
+   }
+   /* //头部类容 */
+   .fs18{
+     margin: 0 30px;
+   
+     font-size: 20px;
+   
+     color: #27ae60;
+   }
+   .long_solid{
+   height: 20px;
+   
+   border: 2px solid #bdc3c7;
+   
+   background-color: #bdc3c7; 
+   
+   }
+   .icon{
+   font-size: 20px;
+   
+   margin: 0 30px;
+   
+   color: red;
+   
+   }
+   /* 主题类容 */
+   .main_wrap{
+     padding: 0 15vw;
+   }
+   /* 输入框 */
+   .input_wrap{
+     display: flex;
+     
+  
+     width: 100%;
+
+     margin: 20px 0;
+   }
+   .fs_center{
+    line-height:32px;
+   }
+   .nz-input{
+     width: 70%;
+
+     margin: 0 0 0 20px;
+   }
+   /* 下拉框 */
+   .nz_input{
+     width: 50%;
+
+     margin: 0 0 0 28px;
+   }
+   /* 按钮 */
+   .nz-button{
+     margin: 0 0 0 18px;
+   }
+  //  -----------------------------------
+  // --------------主题内容---------------
+  .mainBox{
+    margin: 30px;
+
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    .Article{
+      padding: 10px 20px;
+
+      font-weight: 900;
+
+      border-bottom: 1px solid #bdc3c7;
+    }
+
+    .boxfs{
+      display: flex;
+
+      padding: 20px 50px 0 50px;
+      .name{
+        padding: 0 20px 0 0;  
+        
+        line-height: 30px;
+        font-size: 18px;
+      }
+      .nameInput{
+        width: 80%;
+      }
+    }
+  }
+  //配图
+  .clearfix{
+    padding: 0 50px;
+  }
+
+
+  //按钮
+  .box_wrap{
+    padding: 20px 0 10px 50px;
+    display: flex;
+    .upLine{
+      width: 80px;
+      height: 25px;
+      margin: 0 50px 0 0;
+      
+      border-radius: 4px;
+
+      background: #2ecc71;
+      color: #ecf0f1;
+  
+      border: 1px solid transparent;
+      
+    }
+  }
+  //验证表单
+ 
+  

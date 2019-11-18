@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="JScss2/base.css">
+    <link rel="stylesheet" href="JScss2/JS2-2.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="JScss2/JS2-2.JS" async></script>
+
+</head>
+
+<body>
+    <header>
+        <button class="arrows button"></button>
+    </header>
+    <main>
+        <h2 class="color-fs">玩家配比</h2>
+        <div class="content">
+            <div class="warp-box">
+                <img src="picture/狼人.png" class="img-s">
+                <div class="fs-12">
+
+                    杀手&emsp;<span id="killer">2</span>&emsp;人
+                </div>
+
+            </div>
+            <div class="warp-box">
+                <img src="picture/民兵.png" class="img-s">
+                <div class="fs-12">
+
+                    民兵&emsp;<span id="civilian">6</span>&emsp;人
+                </div>
+
+            </div>
+
+
+
+        </div>
+        <!-- ----------控制滑轮------------ -->
+        <div class="div_box">
+            <!-- 点击减一 -->
+            <div class="reduce"></div>
+            <!-- 滑轮 -->
+            <input id="input_range" type="range" min="4" max="18" value="8">
+            <!-- 点击加一 -->
+            <div class="add"></div>
+        </div>
+        <!-- -------------------- -->
+        <!-- ------输入框------- -->
+        <div class="div_box2">
+            <!-- 输入框 -->
+            <div class=" fw-b">请输入玩家数量</div>
+            <input class="mglr-10" id="input_text" type="text" value="8">
+            <strong class="fs-color">玩家数量为4-18</strong>
+        </div>
+        <!-- ---------------------- -->
+    </main>
+    <footer class="mglr-10">
+        <button class="fw-b mgtb-10" id="button-two">去发牌</button>
+    </footer>
+</body>
+
+</html>

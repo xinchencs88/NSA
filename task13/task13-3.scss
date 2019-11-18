@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    position: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid #74d4eb;
+    background-color: #29bde0;
+
+    .picture-s {
+        width: 21px;
+        height: 21px;
+        margin: 0 10px 0 10px;
+    }
+    .picture-s1 {
+        width: 25.5px;
+        height: 21px;
+        margin: 0 10px 0 10px;
+    }
+
+    .font {
+        font-size: 15px;
+        color: white;
+
+    }
+
+    
+}
+// -------------顶部固定---------------
+main{
+    width: 100%;
+    height: 100%;
+    margin: 61px 0 12px 0;
+    background-color: white;
+  
+    .warp-box{
+        padding:12px 6.68vw 12px 6.68vw ;
+        background-color:#29bde0; 
+        .picture-warp-box{
+            text-align:center;
+     
+        }
+        .img-h100{
+            height: 100px;
+        }
+        .fs-15{
+            height: 50px;
+            margin:0 0 21px 0 ;
+            font-size: 15px;color: #ffc865;
+            font-weight: bold;
+        
+      
+        }
+        .display-fs14{
+            display: block;
+            margin: 2px 0 0 0;
+            font-size:14px;color: white;
+           
+        
+        }
+        .fs{
+            display: inline-block;
+            width: 32%;
+            margin: 0;
+            font-size:14px;color: white;
+           
+          
+        }
+    }
+    // --------------第二行--------------
+    .warp-box-content{
+       
+        padding:0 6.68vw 15px 6.68vw  ;
+        border-top: 1px solid #dddddd;
+        border-bottom: 1px solid #dddddd; 
+        background-color:white; 
+        .span-fs15{
+            display: block;
+            margin:5px 0 10px 0 ;
+            font-size: 14px;  
+        }
+        .span2-fs14{
+            white-space: nowrap;
+            font-size: 8.5px;color:#c7c7c7;
+        
+        }
+        .fs-14{
+            font-size: 11px;color: #c7c7c7;
+        }
+    }
+    
+    
+    
+}
+
+// －－－－－－－－底部固定－－－－－－－
+footer{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    background-color: rgba(41, 189, 224, 0.5);
+   
+}
+.D-box-a{
+    display: block;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    height: 42px; 
+    width: 40%;
+    border: 1px solid red;
+    border-radius:5px; 
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    background-color:red;
+   
+   
+   
+   
+}
+.D-box-a1{
+    display: block;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    text-decoration: none;
+    height: 42px; 
+    width: 40%;
+    border: 1px solid #fbb435;
+    border-radius:5px; 
+    font-size: 15px;
+    color: white;
+    background-color:#fbb435;
+   
+    
+    
+}
+
+

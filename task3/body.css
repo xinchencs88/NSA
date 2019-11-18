@@ -1,0 +1,63 @@
+
+body {
+    /* 撑起body框架 */
+
+    background-color: rgb(104, 205, 213);
+    /*  背景颜色 */
+
+}
+
+
+.div1 {
+    position: relative;
+    width:30px;
+
+}
+
+.div2 {
+   margin-top:30px;
+   text-align:center;
+   color: white;
+   height:180px; 
+}
+.div4{
+    margin:0px auto 50px auto ;
+    display: block;
+    width: 100px;
+}
+.txt{
+    font-size: 13px;
+    font-weight: bold;
+    margin:0 20px 0 20px ;
+}
+.tupian{
+    position:absolute; 
+    text-align:center;
+    color: white;
+    left: 20px;
+}
+/* .center{
+    text-align:center;
+    
+} */
+.f1{
+    margin: 80px 0 0 0;
+}
+.tall{
+    width: 50px;  
+}
+.font{
+    
+    text-align:center;
+    right:20px;
+    float:right;
+    color: white;
+}
+.tupian1{
+   width: 50px;
+}
+.color{
+   border-color: white;
+   width: 50px;
+}
+

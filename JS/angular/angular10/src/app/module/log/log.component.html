@@ -1,0 +1,28 @@
+<body>
+    <div class="">
+    <video  src="../../../assets/picture/LOL.mp4" class="videoWH"
+    style="
+    width: 100px"
+  muted  autoplay loop >
+        <!-- <source src="../../../assets/picture/K_DA.mp4"  muted  autoplay loop> -->
+    </video>
+</div>
+    <div class="centre"> 
+        <h2>登录平台</h2>
+        <form>
+            <div class="warp">
+                <input class="inputText" type="text" name = "name" onKeyUp="value=value.replace(/[\W]/g,'')" maxlength="18"  required  [(ngModel)]="a.name" >
+                <label for="">账号</label>
+            </div>
+            <div class="warp">
+                <input class="password" type="password" name="pwd" onKeyUp="value=value.replace(/[\W]/g,'')"  maxlength="6" required [(ngModel)]="a.pwd" > 
+                <label for="">密码</label>
+            </div>
+            
+            <button (click)="gatA()" class="landing">登陆</button>
+        </form>
+       
+    </div>
+ 
+</body>
+<router-outlet></router-outlet>

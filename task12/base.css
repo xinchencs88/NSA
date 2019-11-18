@@ -1,0 +1,66 @@
+/* 文字大小 */
+ .fs-11{
+     font-size: 11px;
+ } 
+.fs-12{
+      font-size: 12px
+  }
+.fs-15{
+    font-size: 15px;
+}
+/* mg距离 */
+.mgt-10{
+    margin-top: 10px;
+}
+.mgb-10{
+    margin-bottom:10px;
+}
+.mgl-10{
+    margin-left: 10px;
+}
+.mgr-5{
+    margin-right: 5px;
+}
+.mgr-10{
+    margin-right: 10px;
+}
+.mgr-15{
+    margin-right: 15px;
+}
+.mglr-10{
+    margin: 0 10px;
+}
+/* padding  */
+.pt-5{
+    padding-top: 5px;
+}
+.pb-5{
+    padding-bottom: 5px;
+
+}
+.pl-10{
+    padding-left: 10px;
+}
+.pl-15{
+    padding-left: 15px;
+}
+.pr-10{
+    padding-right: 10px;
+}
+.ptb-10{
+    padding:10px 0 ;
+}
+.ptb-15{
+    padding:15px 0 ;
+}
+.plr-5{
+    padding: 0 5px;
+}
+.plr-10{
+    padding: 0 10px;
+}
+/* ----------vw----------- */
+.pdlr-15vw{
+    padding: 0 15vw;
+}
+

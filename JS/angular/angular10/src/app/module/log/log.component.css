@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.videoWH {
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.centre {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
+  box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.5);
+}
+
+.centre h2 {
+  margin: 0 0 35px 0;
+  padding: 0 0 0 0;
+  color: #ffffff;
+  text-align: center;
+}
+
+.warp {
+  position: relative;
+}
+
+.inputText {
+  width: 100%;
+  padding: 10px 0;
+  color: #ffffff;
+  margin-bottom: 30px;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.password {
+  width: 100%;
+  padding: 10px 0;
+  color: #ffffff;
+  margin-bottom: 30px;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.centre .warp label {
+  position: absolute;
+  top: 6px;
+  left: 0;
+  font-size: 16px;
+  pointer-events: none;
+  color: #ffffff;
+  transition: .5s;
+}
+
+.centre .warp input:focus ~ label,
+.centre .warp input:valid ~ label {
+  top: -18px;
+  left: 0;
+  color: #3498db;
+  font-size: 12px;
+}
+
+.landing {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  padding: 10px 30px;
+}
+
+.landing:hover {
+  border-radius: 5px;
+  background-color: #3498db;
+}

@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #29bde0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  border-bottom: 1px solid #ffffff;
+  background-color: #29bde0;
+}
+
+header .img-s {
+  height: 20px;
+  margin: 0 8.5px;
+}
+
+header .fs-middle {
+  font-size: 15px;
+  color: white;
+}
+
+main {
+  padding: 0 6vw;
+}
+
+main .warp-box {
+  position: relative;
+  width: 100%;
+  height: 328px;
+  border: 2.52px solid #ffffff;
+  margin-top: 41px;
+  text-align: center;
+  background-color: #ffedc5;
+}
+
+main .warp-box .fs-warp {
+  position: absolute;
+  left: calc((100% - 35.5px)/2);
+  top: -20px;
+  width: 34px;
+  height: 34px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1.5px solid #ffedc5;
+  background-color: #ffffff;
+}
+
+main .warp-box .fs-warp .fs-top {
+  line-height: 34px;
+  font-size: 15.5px;
+  color: red;
+}
+
+main .warp-box .imgs {
+  margin-top: 85px;
+  width: 150px;
+}
+
+main .warp-box .imgs2 {
+  margin-top: 85px;
+  width: 151px;
+}
+
+footer {
+  padding: 0 6vw;
+  margin-top: 61px;
+}
+
+footer .b-bottom {
+  padding: 10px 0;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fbb435;
+}
+
+footer .b-bottom .fs-warp-bottom {
+  font-size: 21px;
+  color: #ffffff;
+}

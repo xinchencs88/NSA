@@ -1,0 +1,122 @@
+<header>
+  <div class="main_wap_box">
+    <div class="fs18">猎头</div>
+    <div class="long_solid"></div>
+    <div class="fs18">user</div>
+    <div class="long_solid"></div>
+    <div class="icon" nz-icon nzType="minus-circle" nzTheme="outline"  (click)='quit()'></div>
+  </div>
+</header>
+
+<main class="mainBox">
+  <div class="Article">
+    新增Article
+  </div>
+  <form #Form="ngForm">
+    <nz-form-item>
+      <nz-form-label [nzSpan]="5">标题</nz-form-label>
+      <nz-form-control nzValidateStatus [nzSpan]="12" nzErrorTip="请填写名称">
+        <input #cs nz-input [(ngModel)]="article.title" maxlength="18" placeholder="标题名称" name='title' required />
+       <p>{{cs.className}}</p>
+      </nz-form-control>
+    </nz-form-item>
+
+     <!-- 下拉框 -->
+      <nz-form-item>
+        <nz-form-label [nzSpan]="5">类型</nz-form-label>
+        <nz-form-control 
+        style="width: 150px;" 
+        [nzSpan]="12" 
+        nzValidateStatus 
+        nzHasFeedback>
+          <nz-select style="width: 120px;" [(ngModel)]="article.type" name='type' required>
+            <nz-option *ngFor="let item of type | keyvalue" [nzValue]="item.key" [nzLabel]="item.value">
+            </nz-option>
+          </nz-select>
+        </nz-form-control>
+
+        <!-- 分支选项 -->
+        <nz-form-label *ngIf="article.type == 3" [nzSpan]="5">类型</nz-form-label>
+        <nz-form-control *ngIf="article.type == 3" [nzSpan]="1" nzValidateStatus nzHasFeedback>
+          <nz-select style="width: 120px;" [(ngModel)]="article.industry" name='industry' required>
+            <nz-option *ngFor="let item of industry | keyvalue" [nzValue]="item.key" [nzLabel]="item.value">
+            </nz-option>
+          </nz-select>
+        </nz-form-control>
+      </nz-form-item>
+
+
+
+
+    
+<!-- 说明 -->
+
+<nz-form-item>
+  <nz-form-label [nzSpan]="5">说明</nz-form-label>
+  <nz-form-control nzValidateStatus [nzSpan]="12" nzErrorTip="请填写说明">
+    <input class="nameInput" nz-input [(ngModel)]="article.content" placeholder="说明" name="content" required />
+  </nz-form-control>
+</nz-form-item>
+<!-- 跳转链接 -->
+
+<nz-form-item>
+  <nz-form-label [nzSpan]="5">跳转链接</nz-form-label>
+  <nz-form-control nzValidateStatus [nzSpan]="12" nzErrorTip="请填写跳转链接">
+    <input type="URL" placeholder="https:" class="nameInput" nz-input [(ngModel)]="article.url" name="URL" required
+#URL />
+  </nz-form-control>
+</nz-form-item>
+    <div class="boxfs">
+      <div class="name">配&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ensp;图</div>
+
+    </div>
+
+    <!-- 配图 -->
+    <div class="clearfix">
+      <nz-upload nzAction="/a/u/img/task" nzListType="picture-card" [(nzFileList)]="article.img"
+        [nzPreview]="handlePreview" (nzChange)='change($event)' name='img'
+        [nzShowButton]="article.img.length < 1"
+        >
+
+        <i nz-icon nzType="plus"></i>
+        <div class="ant-upload-text">Upload</div>
+
+
+      </nz-upload>
+      <nz-modal [nzVisible]="previewVisible" [nzContent]="modalContent" [nzFooter]="null"
+        (nzOnCancel)="previewVisible = false">
+        <ng-template #modalContent>
+          <img [src]="previewImage" [ngStyle]="{ width: '100%' }" />
+        </ng-template>
+      </nz-modal>
+    </div>
+    <!-- ---------------------------------------------- -->
+   
+        <nz-form-item class="box_wrap">
+            <nz-form-control style="width: 120px;">
+                <button nz-button nzType="primary" 
+                [disabled]="(!Form.form.valid || article.img[0] == undefined) || disable"  
+                (click)="click()">上线</button>
+            </nz-form-control>
+
+            <nz-form-control style="width: 120px;">
+                <button nz-button nzType="primary" 
+                [disabled]="(!Form.form.valid || article.img[0] == undefined)||  disable"  
+                (click)="draft()">草稿</button>
+            </nz-form-control>
+
+            <nz-form-control style="width: 120px;"
+            
+            >
+                <button nz-button nzType="primary" 
+                style="color: red;
+                      background: #ecf0f1;
+                       border-color: red;"
+                (click)="cancel()">取消</button>
+            </nz-form-control>
+        </nz-form-item>
+     
+     
+  
+  </form>
+</main>
